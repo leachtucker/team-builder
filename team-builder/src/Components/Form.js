@@ -38,7 +38,14 @@ function Form({ updateFormValues, formValues, addMember }) {
                         Email: <input type="email" placeholder="Email" name="email" value={formValues.email} maxLength={30} onChange={(evt) => {onChange(evt)}} />
                     </label>
                     <label>
-                        Role: <input type="text" placeholder="Role" name="role" value={formValues.role} maxLength={30} onChange={(evt) => {onChange(evt)}} />
+                        Role: <br />
+                        <select name="role" value={formValues.role} onChange={(evt) => {onChange(evt)}}>
+                            <option value="">---Select Role---</option>
+                            <option value="Project Lead">Project Lead</option>
+                            <option value="Backend Engineer">Backend Engineer</option>
+                            <option value="Frontend Engineer">Frontend Engineer</option>
+                            <option value="Designer">Designer</option>
+                        </select>
                     </label>
                 </div>
                 <Button onClick={onSubmit}>Submit</Button>
