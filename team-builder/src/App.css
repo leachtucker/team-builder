@@ -1,0 +1,37 @@
+/* CSS Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  /* border: 1px solid grey; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+}
+
+/* Layout */
+
+.App {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 2%;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+label {
+  width: 28%;
+}
